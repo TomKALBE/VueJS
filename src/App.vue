@@ -1,12 +1,12 @@
 <script setup>
-import HelloWorld from './components/HelloWorld.vue'
+import Main from './components/Main.vue'
 import TheWelcome from './components/TheWelcome.vue'
 </script>
 
 <template>
   <header>
     <div class="wrapper">
-      <HelloWorld msg="You did it!" />
+      <Main/>
     </div>
   </header>
 

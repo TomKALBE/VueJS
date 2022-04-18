@@ -1,27 +1,26 @@
 <script>
+import Comment from "./Comment.vue"
+import formatDate from "../includes/formatDate"
+
 const API_URL = `http://localhost:3001/articles`
 
 export default {
-  data: () => ({
-    branches: ['main', 'v2-compat'],
-    currentBranch: 'main',
-    articles: null
-  }),
-
-  created() {
-    // fetch on init
-    this.fetchData()
-  },
-  methods: {
-    async fetchData() {
-      this.articles = await (await fetch(API_URL)).json()
+    data: () => ({
+        branches: ["main", "v2-compat"],
+        currentBranch: "main",
+        articles: null
+    }),
+    created() {
+        // fetch on init
+        this.fetchData();
+        this.formatDate = formatDate.formatDate;
     },
-    formatDate(v) {
-      const dt = new Date(v)
-      const date = dt.toLocaleDateString("fr") + " à " + dt.getHours() + "H" + dt.getMinutes()
-      return date
-    }
-  }
+    methods: {
+        async fetchData() {
+            this.articles = await (await fetch(API_URL)).json();
+        },  
+    },
+    components: { Comment }
 }
 </script>
 
@@ -57,12 +56,7 @@ export default {
           <div class="social_2">
             <h3>Commentaires :</h3>
             <div class="message" v-for="comment in article.commentaires">
-              <div style="display: flex;justify-content: space-between;align-items: center;">
-                <strong style="color:ivory ;">{{comment.pseudo}}</strong>
-                <p style="font-size: 12px;">le {{formatDate(comment.dt)}}</p>
-              </div>
-              <p style="margin-top: 0.5em;margin-bottom: 0.5em;">{{comment.contenu}}</p>
-              
+              <Comment :comment="comment"/>
             </div>
           </div>
         </div>
