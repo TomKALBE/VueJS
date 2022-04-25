@@ -1,0 +1,160 @@
+{
+  "utilisateurs": [
+    {
+      "id": 1,
+      "pseudo": "Alain",
+      "email": "alain@yahoo.fr",
+      "password": "123456",
+      "urlImgProfil": "https://thispersondoesnotexist.com/image"
+    },
+    {
+      "id": 2,
+      "pseudo": "Béatrice",
+      "email": "bea@yahoo.fr",
+      "password": "123456",
+      "urlImgProfil": "https://thispersondoesnotexist.com/image"
+    },
+    {
+      "pseudo": "test",
+      "email": "test@test.fr",
+      "password": "123456",
+      "urlImgProfil": "https://thispersondoesnotexist.com/image",
+      "id": 3
+    }
+  ],
+  "articles": [
+    {
+      "id": 1,
+      "contenu": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis eos fugit aut asperiores nam vero! Accusamus quos ratione, rerum voluptate quas dolor accusantium nemo harum commodi in exercitationem vitae culpa.",
+      "urlImgArticle": "https://source.unsplash.com/random/1000x300",
+      "like": 326,
+      "pseudo": "Alain",
+      "date": 1649277945051
+    },
+    {
+      "id": 2,
+      "contenu": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis eos fugit aut asperiores nam vero! Accusamus quos ratione, rerum voluptate quas dolor accusantium nemo harum commodi in exercitationem vitae culpa.",
+      "urlImgArticle": "https://source.unsplash.com/random/1000x300",
+      "like": 30,
+      "pseudo": "Alain",
+      "date": 1649277945051
+    },
+    {
+      "contenu": "Super mon premier post",
+      "urlImgArticle": "https://source.unsplash.com/random/1000x300",
+      "like": 0,
+      "date": 1650385454277,
+      "pseudo": "Alain",
+      "id": 3
+    },
+    {
+      "contenu": "Nouveau post hihi",
+      "urlImgArticle": "https://source.unsplash.com/random/1000x300",
+      "like": 0,
+      "date": 1650390513355,
+      "pseudo": "Alain",
+      "commentaires": [],
+      "id": 4
+    }
+  ],
+  "commentaires": [
+    {
+      "id": 1,
+      "contenu": "lorem ipsum",
+      "pseudo": "Béatrice",
+      "dt": 1649277945051,
+      "articleId": 1
+    },
+    {
+      "id": 2,
+      "contenu": "lorem ipsum",
+      "pseudo": "Béatrice",
+      "dt": 1649277945051,
+      "articleId": 1
+    },
+    {
+      "id": 3,
+      "contenu": "lorem ipsum",
+      "pseudo": "Béatrice",
+      "dt": 1649277945051,
+      "articleId": 2
+    },
+    {
+      "id": 4,
+      "contenu": "lorem ipsum",
+      "pseudo": "Béatrice",
+      "dt": 1649277945051,
+      "articleId": 2
+    },
+    {
+      "id": 5,
+      "contenu": "lorem ipsum",
+      "pseudo": "Béatrice",
+      "dt": 1649277945051,
+      "articleId": 2
+    },
+    {
+      "contenu": "Bonjour j'ajoute un truc de ouf",
+      "dt": 1650389517251,
+      "pseudo": "Alain",
+      "articleId": 3,
+      "id": 6
+    },
+    {
+      "contenu": "test",
+      "dt": 1650390007066,
+      "pseudo": "Alain",
+      "articleId": 3,
+      "id": 7
+    },
+    {
+      "contenu": "test",
+      "dt": 1650390065880,
+      "pseudo": "Alain",
+      "articleId": 3,
+      "id": 8
+    },
+    {
+      "contenu": "ici",
+      "dt": 1650390085994,
+      "pseudo": "Alain",
+      "articleId": 1,
+      "id": 9
+    },
+    {
+      "contenu": "la",
+      "dt": 1650390113550,
+      "pseudo": "Alain",
+      "articleId": 1,
+      "id": 10
+    },
+    {
+      "contenu": "la",
+      "dt": 1650390133627,
+      "pseudo": "Alain",
+      "articleId": 1,
+      "id": 11
+    },
+    {
+      "contenu": "je suis nul",
+      "dt": 1650390407010,
+      "pseudo": "Alain",
+      "articleId": 1,
+      "id": 12
+    },
+    {
+      "contenu": "Bouffon",
+      "dt": 1650390503705,
+      "pseudo": "Alain",
+      "articleId": 1,
+      "id": 13
+    },
+    {
+      "contenu": "Premier comm ezbi",
+      "dt": 1650390690793,
+      "pseudo": "Alain",
+      "articleId": 4,
+      "id": 14
+    }
+  ]
+}
